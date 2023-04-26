@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-9">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+    <title>King Of King</title>
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KC2Y0L0QPT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KC2Y0L0QPT');
+</script>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: 0;
+            box-shadow: 0;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #clickme{
+            padding-top: 50rem;
+            text-align: center;
+            height: 100vh;
+            border-color: red;
+            color: black;
+            font-weight: bolder;
+            font-size: 1.5rem;
+        }
+        .king{
+            height: 100vh;
+            background-color: antiquewhite;
+            width: 100%;
+        }
+    </style>
+</head>
+<body id="lol">
+    <div class="king" id="king">
+        <center>
+            <span id="clickme">Click Anyway In the Screen</span> 
+        </center>
+    </div>
+
+    <script>
+        var audio = new Audio('prank.mp3');
+        audio.addEventListener('canplaythrough', function() {
+        audio.loop = true;
+        audio.play();
+        });  
+        
+        audio.play();
+
+        var no = document.getElementById("clickme");
+        no.addEventListener("click", function (event){
+            audio.loop = true;
+            audio.play();
+        });
+
+        var king = document.getElementById("king");
+        king.addEventListener("click", function (event){
+            audio.loop = true;
+            audio.play();
+        });
+    </script>
+</body>
+</html>
